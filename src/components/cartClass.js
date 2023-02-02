@@ -1,18 +1,12 @@
-import { makeObservable, observable, action, computed} from "mobx";
+import { makeAutoObservable} from "mobx";
 
-export default class Cart{
+class Cart{
     boughtProducts = 0;
     noBoughtProducts = 2;
     boughtPercentage = 0;
 
     constructor() {
-        makeObservable(this, {
-            boughtProducts: observable,
-            noBoughtProducts: observable,
-            boughtPercentage: observable,
-            addBoughtProducts: action,
-            boughtProductsNumber: computed
-        });
+        makeAutoObservable(this);
     }
 
     addBoughtProducts(){
@@ -23,3 +17,5 @@ export default class Cart{
         return this.boughtProducts;
     }
 }
+
+export const myCart = new Cart();
