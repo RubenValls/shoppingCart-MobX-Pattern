@@ -1,10 +1,14 @@
 import React from 'react';
-import Test from './test';
+import Includer from './includer';
+import StatsCounter from './statsCounter';
+import Stock from './stock';
 
 const ShoppingApp = () => {
     return (
         <div className='container text-center mt-5'>
-            <h1>ShoppingApp - <Test/></h1>
+            <Includer/>
+            <Stock/>
+            <StatsCounter/>
         </div>
     );
 }
