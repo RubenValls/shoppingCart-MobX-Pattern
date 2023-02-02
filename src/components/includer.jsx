@@ -1,4 +1,5 @@
 import React from 'react';
+import { myCart } from '../classes/cartClass';
 import { myStock } from '../classes/Stock';
 
 const Includer = () => {
@@ -17,6 +18,8 @@ function add(){
     const product = document.querySelector('#product').value;
     if(product){
         myStock.addProduct(product);
+        myCart.addTotalProducts();
+        myCart.boughtPercentageNumber();
         if(document.querySelector('#labelWarning')){
             document.querySelector('#labelWarning').remove();
         }

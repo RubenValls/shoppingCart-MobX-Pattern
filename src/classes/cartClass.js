@@ -1,4 +1,4 @@
-import { action, computed, makeObservable, observable} from "mobx";
+import { action, makeObservable, observable} from "mobx";
 
 class Cart{
     
@@ -14,7 +14,9 @@ class Cart{
             noBoughtProducts: observable,
             boughtPercentage: observable,
             addBoughtProducts: action,
-            boughtProductsNumber: computed
+            addTotalProducts: action,
+            addNoBoughtProducts: action,
+            boughtPercentageNumber: action
         });
     }
 
@@ -22,8 +24,16 @@ class Cart{
         this.boughtProducts++;
     }
 
-    get boughtProductsNumber(){
-        return this.boughtProducts;
+    addTotalProducts(){
+        this.totalProducts++;
+    }
+
+    addNoBoughtProducts(){
+        this.noBoughtProducts++;
+    }
+
+    boughtPercentageNumber(){
+        this.boughtPercentage = parseFloat(this.boughtProducts / this.totalProducts * 100).toFixed(2);
     }
 }
 
