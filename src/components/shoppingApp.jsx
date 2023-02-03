@@ -1,5 +1,7 @@
 import React from 'react';
+import Footer from './footer';
 import Includer from './includer';
+import SocialLinks from './socialLinks';
 import StatsCounter from './statsCounter';
 import Stock from './stock';
 
@@ -9,6 +11,8 @@ const ShoppingApp = () => {
             <Includer/>
             <Stock/>
             <StatsCounter/>
+            <Footer/>
+            <SocialLinks/>
         </div>
     );
 }

@@ -4,7 +4,7 @@ import ShoppingApp from './components/shoppingApp';
 
 function App() {
   return (
-    <div className='container-fluid'>
+    <div>
       <Header/>
       <ShoppingApp/>
     </div>
