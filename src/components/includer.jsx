@@ -19,6 +19,7 @@ function add(){
     if(product){
         myStock.addProduct(product);
         myCart.addTotalProducts();
+        myCart.boughtPercentageNumber();
         if(document.querySelector('#labelWarning')){
             document.querySelector('#labelWarning').remove();
         }
