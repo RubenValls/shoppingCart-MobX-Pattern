@@ -8,9 +8,9 @@ const Stock = () => {
             <table className='table'>
                 <thead>
                     <tr>
-                        <th scope="col-6">Product Name</th>
-                        <th scope="col-3">Buy</th>
-                        <th scope="col-3">Delete</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Buy</th>
+                        <th scope="col">Delete</th>
                     </tr>
                 </thead>
                 <EachProduct/>
