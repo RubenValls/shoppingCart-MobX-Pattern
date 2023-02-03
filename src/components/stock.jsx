@@ -4,6 +4,7 @@ import EachProduct from './eachProduct';
 const Stock = () => {
     return (
         <div className='container mt-3'>
+            <h3 className='text-center fst-italic mt-4'>Stock:</h3>
             <table className='table'>
                 <thead>
                     <tr>

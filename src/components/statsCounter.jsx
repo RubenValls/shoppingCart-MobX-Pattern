@@ -5,7 +5,7 @@ import { observer } from 'mobx-react';
 const StatsCounter = observer(() => {
     return (
         <div className='container mt-5'>
-            <h3 className='text-center'>Stats:</h3>
+            <h3 className='text-center fst-italic'>Stats:</h3>
             <table className='justify-content-center align-items-center m-auto'>
                 <tbody>
                     <tr>

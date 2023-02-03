@@ -33,4 +33,5 @@ function add(){
             container.appendChild(label);
         }
     }
+    document.querySelector('#product').value = '';
 }
